@@ -1,0 +1,54 @@
+problem_type  , dataset_size, feature_count, data_type  , best_model
+regression    , small       , few          , numerical  , Linear Regression
+regression    , small       , many         , numerical  , Ridge/Lasso
+regression    , medium      , few          , numerical  , Linear Regression
+regression    , medium      , many         , numerical  , Ridge/Lasso
+regression    , large       , few          , numerical  , Random Forest
+regression    , large       , many         , numerical  , Random Forest
+regression    , small       , few          , mixed      , Decision Tree
+regression    , small       , many         , mixed      , Random Forest
+regression    , medium      , few          , mixed      , Decision Tree
+regression    , medium      , many         , mixed      , Random Forest
+regression    , large       , few          , mixed      , Random Forest
+regression    , large       , many         , mixed      , Random Forest
+
+classification, small       , few          , numerical  , Logistic Regression
+classification, small       , many         , numerical  , SVM
+classification, medium      , few          , numerical  , Logistic Regression
+classification, medium      , many         , numerical  , SVM
+classification, large       , few          , numerical  , Random Forest
+classification, large       , many         , numerical  , Random Forest
+classification, small       , few          , mixed      , Decision Tree
+classification, small       , many         , mixed      , Random Forest
+classification, medium      , few          , mixed      , Decision Tree
+classification, medium      , many         , mixed      , Random Forest
+classification, large       , few          , mixed      , Random Forest
+classification, large       , many         , mixed      , Random Forest
+
+clustering    , small       , few          , numerical  , Hierarchical Clustering
+clustering    , small       , many         , numerical  , K-Means
+clustering    , medium      , few          , numerical  , K-Means
+clustering    , medium      , many         , numerical  , K-Means
+clustering    , large       , few          , numerical  , K-Means
+clustering    , large       , many         , numerical  , K-Means
+clustering    , small       , few          , mixed      , Hierarchical Clustering
+clustering    , small       , many         , mixed      , DBSCAN
+clustering    , medium      , few          , mixed      , DBSCAN
+clustering    , medium      , many         , mixed      , DBSCAN
+clustering    , large       , few          , mixed      , DBSCAN
+clustering    , large       , many         , mixed      , DBSCAN
+
+classification, small       , few          , categorical, Decision Tree
+classification, medium      , few          , categorical, Decision Tree
+classification, large       , few          , categorical, Random Forest
+classification, small       , many         , categorical, Random Forest
+classification, medium      , many         , categorical, Random Forest
+classification, large       , many         , categorical, Random Forest
+
+regression    , small       , many         , categorical, Ridge/Lasso
+regression    , medium      , many         , categorical, Ridge/Lasso
+regression    , large       , many         , categorical, Random Forest
+
+clustering    , small       , many         , categorical, DBSCAN
+clustering    , medium      , many         , categorical, DBSCAN
+clustering    , large       , many         , categorical, DBSCAN

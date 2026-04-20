@@ -1,113 +1,113 @@
-text,label
-"classify flowers into species using petal features",classification
-"classify objects in images into categories",classification
-"identify objects by assigning labels to categories",classification
-"classify images based on visual features",classification
-"identify objects and assign them to known classes",classification
-"classify items into predefined categories",classification
-"assign labels to items based on categories",classification
-"identify spam comments as spam or not",classification
-"identify whether a comment is spam or genuine",classification
-"identify if a message is spam",classification
-"predict category of a product",classification
-"predict type of news article",classification
-"predict class label of input data",classification
-"predict whether email is spam or not",classification
-"identify spam messages",classification
-"identify fraudulent transactions",classification
-"identify objects in images",classification
-"identify whether a review is fake",classification
-"identify sentiment of text",classification
-"classify iris dataset into species",classification
-"predict whether an email is spam or not",classification
-"categorize images as cat or dog",classification
-"classify students as pass or fail",classification
-"detect fraudulent transactions",classification
-"identify if a patient has diabetes",classification
-"classify news articles into topics",classification
-"determine if a tumor is malignant or benign",classification
-"label emails into primary or promotions",classification
-"classify handwritten digits",classification
-"predict if a customer will churn",classification
-"categorize products into different categories",classification
-"detect fake reviews online",classification
-"identify whether a message is toxic",classification
-"classify loan applications as approved or rejected",classification
-"predict whether a user will click an ad",classification
-"classify flowers based on petal features",classification
-"identify language of a text",classification
-"classify sounds into different classes",classification
-"detect whether an image contains a human",classification
-"classify tweets as positive or negative",classification
-"categorize documents into folders",classification
-"identify spam comments on social media",classification
-"classify emails into multiple labels",classification
-"predict category of a product",classification
-"classify medical reports into diagnosis groups",classification
-"detect anomalies as normal or abnormal",classification
-"classify bank transactions into types",classification
-"identify objects in images",classification
-"classify customer feedback into sentiment",classification
-"predict house prices based on features",regression
-"estimate salary based on experience",regression
-"forecast monthly sales revenue",regression
-"predict temperature for tomorrow",regression
-"estimate fuel consumption of a car",regression
-"predict stock prices",regression
-"estimate electricity consumption",regression
-"predict rainfall amount",regression
-"forecast demand for a product",regression
-"estimate weight based on height",regression
-"predict delivery time",regression
-"estimate cost of construction",regression
-"predict exam scores of students",regression
-"forecast website traffic",regression
-"estimate insurance premium",regression
-"predict car resale value",regression
-"estimate energy usage in a building",regression
-"predict movie revenue",regression
-"forecast population growth",regression
-"estimate distance traveled",regression
-"predict blood pressure levels",regression
-"forecast temperature trends",regression
-"estimate price of a used phone",regression
-"predict water consumption",regression
-"estimate time to complete a task",regression
-"predict sales for next quarter",regression
-"forecast profit margins",regression
-"estimate crop yield",regression
-"predict rental prices",regression
-"estimate internet usage",regression
-"group customers based on purchasing behavior",clustering
-"segment users for targeted marketing",clustering
-"cluster similar documents together",clustering
-"group products based on similarity",clustering
-"identify patterns in customer data",clustering
-"cluster users by browsing behavior",clustering
-"group similar images together",clustering
-"segment customers into different groups",clustering
-"cluster news articles by topic",clustering
-"group students based on performance",clustering
-"identify communities in social networks",clustering
-"cluster songs based on genre similarity",clustering
-"group transactions based on patterns",clustering
-"segment market into customer groups",clustering
-"cluster data points without labels",clustering
-"group similar customers automatically",clustering
-"identify hidden patterns in data",clustering
-"cluster cities based on population features",clustering
-"group users based on activity",clustering
-"segment images into regions",clustering
-"cluster products by features",clustering
-"group similar text documents",clustering
-"identify natural groupings in data",clustering
-"cluster customers by spending habits",clustering
-"group patients based on symptoms",clustering
-"segment users into behavioral groups",clustering
-"cluster items into categories automatically",clustering
-"group data points into clusters",clustering
-"identify clusters in unlabeled data",clustering
-"segment audience into different segments",clustering
-"cluster items based on similarity without predefined labels",clustering
-"group items automatically without categories",clustering
-"cluster data points into groups based on similarity",clustering
+text                                                         , label
+"classify flowers into species using petal features"         , classification
+"classify objects in images into categories"                 , classification
+"identify objects by assigning labels to categories"         , classification
+"classify images based on visual features"                   , classification
+"identify objects and assign them to known classes"          , classification
+"classify items into predefined categories"                  , classification
+"assign labels to items based on categories"                 , classification
+"identify spam comments as spam or not"                      , classification
+"identify whether a comment is spam or genuine"              , classification
+"identify if a message is spam"                              , classification
+"predict category of a product"                              , classification
+"predict type of news article"                               , classification
+"predict class label of input data"                          , classification
+"predict whether email is spam or not"                       , classification
+"identify spam messages"                                     , classification
+"identify fraudulent transactions"                           , classification
+"identify objects in images"                                 , classification
+"identify whether a review is fake"                          , classification
+"identify sentiment of text"                                 , classification
+"classify iris dataset into species"                         , classification
+"predict whether an email is spam or not"                    , classification
+"categorize images as cat or dog"                            , classification
+"classify students as pass or fail"                          , classification
+"detect fraudulent transactions"                             , classification
+"identify if a patient has diabetes"                         , classification
+"classify news articles into topics"                         , classification
+"determine if a tumor is malignant or benign"                , classification
+"label emails into primary or promotions"                    , classification
+"classify handwritten digits"                                , classification
+"predict if a customer will churn"                           , classification
+"categorize products into different categories"              , classification
+"detect fake reviews online"                                 , classification
+"identify whether a message is toxic"                        , classification
+"classify loan applications as approved or rejected"         , classification
+"predict whether a user will click an ad"                    , classification
+"classify flowers based on petal features"                   , classification
+"identify language of a text"                                , classification
+"classify sounds into different classes"                     , classification
+"detect whether an image contains a human"                   , classification
+"classify tweets as positive or negative"                    , classification
+"categorize documents into folders"                          , classification
+"identify spam comments on social media"                     , classification
+"classify emails into multiple labels"                       , classification
+"predict category of a product"                              , classification
+"classify medical reports into diagnosis groups"             , classification
+"detect anomalies as normal or abnormal"                     , classification
+"classify bank transactions into types"                      , classification
+"identify objects in images"                                 , classification
+"classify customer feedback into sentiment"                  , classification
+"predict house prices based on features"                     , regression
+"estimate salary based on experience"                        , regression
+"forecast monthly sales revenue"                             , regression
+"predict temperature for tomorrow"                           , regression
+"estimate fuel consumption of a car"                         , regression
+"predict stock prices"                                       , regression
+"estimate electricity consumption"                           , regression
+"predict rainfall amount"                                    , regression
+"forecast demand for a product"                              , regression
+"estimate weight based on height"                            , regression
+"predict delivery time"                                      , regression
+"estimate cost of construction"                              , regression
+"predict exam scores of students"                            , regression
+"forecast website traffic"                                   , regression
+"estimate insurance premium"                                 , regression
+"predict car resale value"                                   , regression
+"estimate energy usage in a building"                        , regression
+"predict movie revenue"                                      , regression
+"forecast population growth"                                 , regression
+"estimate distance traveled"                                 , regression
+"predict blood pressure levels"                              , regression
+"forecast temperature trends"                                , regression
+"estimate price of a used phone"                             , regression
+"predict water consumption"                                  , regression
+"estimate time to complete a task"                           , regression
+"predict sales for next quarter"                             , regression
+"forecast profit margins"                                    , regression
+"estimate crop yield"                                        , regression
+"predict rental prices"                                      , regression
+"estimate internet usage"                                    , regression
+"group customers based on purchasing behavior"               , clustering
+"segment users for targeted marketing"                       , clustering
+"cluster similar documents together"                         , clustering
+"group products based on similarity"                         , clustering
+"identify patterns in customer data"                         , clustering
+"cluster users by browsing behavior"                         , clustering
+"group similar images together"                              , clustering
+"segment customers into different groups"                    , clustering
+"cluster news articles by topic"                             , clustering
+"group students based on performance"                        , clustering
+"identify communities in social networks"                    , clustering
+"cluster songs based on genre similarity"                    , clustering
+"group transactions based on patterns"                       , clustering
+"segment market into customer groups"                        , clustering
+"cluster data points without labels"                         , clustering
+"group similar customers automatically"                      , clustering
+"identify hidden patterns in data"                           , clustering
+"cluster cities based on population features"                , clustering
+"group users based on activity"                              , clustering
+"segment images into regions"                                , clustering
+"cluster products by features"                               , clustering
+"group similar text documents"                               , clustering
+"identify natural groupings in data"                         , clustering
+"cluster customers by spending habits"                       , clustering
+"group patients based on symptoms"                           , clustering
+"segment users into behavioral groups"                       , clustering
+"cluster items into categories automatically"                , clustering
+"group data points into clusters"                            , clustering
+"identify clusters in unlabeled data"                        , clustering
+"segment audience into different segments"                   , clustering
+"cluster items based on similarity without predefined labels", clustering
+"group items automatically without categories"               , clustering
+"cluster data points into groups based on similarity"        , clustering

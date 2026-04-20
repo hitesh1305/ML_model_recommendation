@@ -1,11 +1,15 @@
 # app.py
 
 import streamlit as st
+import matplotlib.pyplot as plt
 from ranker import get_recommendations
-from explanations import get_explanation
 import pandas as pd
 from classifier import predict_with_confidence
 from suggestions import suggest_rephrase
+from visuals import get_image_path
+from dynamic_explanations import get_dynamic_explanation
+from ml_predictor import predict_model
+
 
 # -------- PAGE CONFIG -------- #
 
@@ -24,9 +28,11 @@ st.markdown("💡 Example: *Predict house prices based on area and location*")
 
 st.markdown("---")
 
+st.subheader("How the System Works")
+st.image("assets/flow.png")
 # -------- INPUT SECTION -------- #
 
-st.subheader("📝 Enter Problem Details")
+st.subheader("Enter Problem Details")
 
 problem_text = st.text_area("Problem Statement")
 
@@ -38,7 +44,7 @@ st.markdown("---")
 
 # -------- BUTTON -------- #
 
-if st.button("🚀 Recommend Models"):
+if st.button("Recommend Models"):
 
     if problem_text.strip() == "":
         st.warning("Please enter a problem statement.")
@@ -57,7 +63,7 @@ if st.button("🚀 Recommend Models"):
 
         # -------- OUTPUT -------- #
 
-        st.subheader("🔍 Detected Problem Type")
+        st.subheader("Detected Problem Type")
         st.info(f"**{problem_type.upper()}**")
 
         # -------- SUGGESTION -------- #
@@ -65,13 +71,13 @@ if st.button("🚀 Recommend Models"):
         suggestion = suggest_rephrase(problem_text, problem_type, confidence_scores)
 
         if suggestion:
-            st.warning(f"⚠️ {suggestion}")
+            st.warning(f"{suggestion}")
 
         st.markdown("---")
 
         # -------- CONFIDENCE -------- #
 
-        st.subheader("🔎 Confidence Scores")
+        st.subheader("Confidence Scores")
 
         conf_df = pd.DataFrame({
             "Problem Type": list(confidence_scores.keys()),
@@ -86,24 +92,37 @@ if st.button("🚀 Recommend Models"):
 
         best_algo, best_score = recommendations[0]
 
-        st.subheader("🥇 Best Recommendation")
+        st.subheader("Best Recommendation")
         st.success(f"{best_algo} (Score: {best_score})")
 
         st.markdown("---")
 
         # -------- ALL RECOMMENDATIONS -------- #
 
-        st.subheader("🏆 Top Recommended Algorithms")
+        st.subheader("Top Recommended Algorithms")
 
         names = []
         scores = []
 
         for algo, score in recommendations:
-            st.markdown(f"""
-            ### 🧠 {algo}
-            **Score:** {score}  
-            {get_explanation(algo)}
-            """)
+            reasons = get_dynamic_explanation(
+                algo,
+                dataset_size,
+                feature_count,
+                data_type
+            )
+
+            st.markdown(f"### {algo}")
+            st.markdown(f"**Score:** {score}")
+
+            st.markdown("**Why this model?**")
+            for r in reasons:
+                st.write(f"• {r}")
+            img_path = get_image_path(algo)
+            
+            if img_path:
+                st.image(img_path, caption=algo)
+                
             st.markdown("---")
 
             names.append(algo)
@@ -111,12 +130,22 @@ if st.button("🚀 Recommend Models"):
 
         # -------- VISUALIZATION -------- #
 
-        st.subheader("📊 Recommendation Scores")
-        st.caption("Higher score indicates better suitability for the given problem.")
+       # -------- VISUALIZATION -------- #
+
+        st.subheader("Recommendation Scores")
 
         df = pd.DataFrame({
             "Algorithm": names,
             "Score": scores
         })
 
-        st.bar_chart(df.set_index("Algorithm"))
+        fig, ax = plt.subplots()
+        ax.bar(df["Algorithm"], df["Score"])
+
+        ax.set_xlabel("Algorithms")
+        ax.set_ylabel("Score")
+        ax.set_title("Model Suitability Ranking")
+
+        plt.xticks(rotation=30)
+
+        st.pyplot(fig)
